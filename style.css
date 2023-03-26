@@ -1,0 +1,154 @@
+li{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Open Sans',sans-serief;
+    margin:0;
+    background-color: rgb(44,41,38);
+}
+#main-header{
+    height:5rem;
+    background-color: rgb(29,24,26);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 1.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#logo{
+    font-size:2rem;
+    font-weight: bold;
+    color:rgb(238,164,82);
+    text-transform: uppercase;
+}
+#main-header ul{
+    list-style: none;
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin:0;
+    padding:0;
+}
+#main-header li{
+    margin:0 1rem;
+}
+#main-header nav a{
+    color:rgb(186,130,129);
+    font-size: 1.25rem;
+}
+#main-header nav a:hover{
+    color:rgb(229,164,122);
+}
+#side-drawer{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: rgb(30,26,28);
+    display:none;
+}
+#side-drawer:target{
+    display:block;
+}
+#side-drawer header{
+    height:5rem;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 1.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#side-drawer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0%;
+    padding: 4rem;
+}
+#side-drawer li{
+    margin: 1.2rem 0;;
+}
+#side-drawer a{
+    text-decoration: none;
+    color:rgb(234,164,85);
+}
+.menu-btn{
+    width:3rem;
+    height:3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display:none;
+}
+.menu-btn span{
+    width:100%;
+    height:3px;
+    background-color: white;
+}
+main h1{
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    text-align: center;
+    color:rgb(238,164,82)
+}
+.latest-products{
+    width:85%;
+    margin:2.3rem auto;
+}
+#latest-products ul{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem;
+}
+.food-item{
+    background-color: rgb(228,206,182);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.food-item img{
+    width:100%;
+    height:15rem;
+    object-fit: cover;
+}
+.food-item-content{
+    text-align: center;
+    padding:1.2rem;
+    font-size:1.5rem;
+}
+.food-item-h2{
+    margin:0 0 1rem 0;
+}
+.btn{
+    background-color: rgb(228,157,44);
+    color:white;
+    border-radius: 8px;
+    padding:0.6rem 1rem;
+}
+.btn:hover{
+    background-color: rgb(221,134,30);
+}
+@media(max-width : 48rem){
+    #main-header nav a{
+        display:none;
+    }
+    .menu-btn{
+        display:flex;
+    }
+    main h1{
+        font-size: 1.5rem;
+    }
+    #latest-products ul{
+        grid-template-columns: 1fr;
+    }
+}
